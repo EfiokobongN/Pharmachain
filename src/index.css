@@ -110,7 +110,7 @@ h1 {
   width: 70%;
   padding-top: 4px;
 }
-.home-background .span {
+ .span {
   white-space: nowrap;
   max-width: 115px;
   height: 4px;
@@ -172,3 +172,39 @@ font-weight: 600;
 text-transform: capitalize;
 
 }
+
+/*   banner 2*/
+.flex{
+  display: flex;
+  flex-direction: row;
+ 
+}
+  .flex-text h2{
+  font-size: 45px;
+  font-weight: 300;
+  }
+  .flex-text p{
+    font-size: 20px;
+    font-weight: 100;
+    letter-spacing: 1;
+    line-height: 1.7;
+    padding-bottom: 20px;
+  }
+  .flex-text .span{
+    margin-top: 5rem;
+    white-space: nowrap;
+  max-width: 115px;
+  height: 4px;
+  font-style: normal;
+  font-size: 16px;
+  align-items: center;
+  padding: 15px 20px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  border-radius: 45px;
+  }
+  .flex .image{
+    padding-top: 55px;
+  }
+  
+

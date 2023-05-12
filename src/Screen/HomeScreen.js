@@ -59,6 +59,21 @@ function HomeScreen() {
                     </div>
                 </div>
             </div>
+
+            <div className='flex'>
+                <div className='image'>
+                <img src='https://www.pharmachain.africa/_next/image?url=%2Flaptop-dash.png&w=1920&q=75' alt='pharm'/>
+                </div>
+
+                <div className='flex-text'>
+                    <h2 >
+                    An efficient and cost effective way for HMOs to enhance their enrollee medication management.
+                    </h2>
+                    <p>We understand the challenges HMOs face that is why we have created a streamlined and efficient system that
+                         makes it easy for you to request, deliver, and track medications for your enrollees.</p>
+                         <a className='span' href='/#'>Get Started</a>
+                </div>
+            </div>
         </div>
     );
 }
