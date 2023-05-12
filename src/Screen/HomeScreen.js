@@ -6,25 +6,31 @@ function HomeScreen() {
         <div className='width'>
             <div className="hero">
                 <div className="home-background">
-                    <div className="left-text">
-                        <h2>
-                            One way solution for medicine
+                    <div className='left-text'>
+                    <div className="text-flex">
+                        <h1>
+                           One way  solution for medicine
+                            
                             <div className="wrap">
-                                <div className="acce"> accessibility</div>
-                                <div className="deliv">delivery</div>
+                                <div className="acce"> Accessibility</div>
+                                <div className="deliv">Delivery</div>
                             </div>
-                        </h2>
+                            </h1>
                         <p className="texts">
-                            Easily order and receive medicine for your patients,
+                            Easily order and receive medicine for your <br/> patients,
                             employee and enrolles
                         </p>
-
-                        <span className='spans'>
+                        <div className='btn'>
+                        
                             <a className="span" href="/#">
                                 create a free account
                             </a>
-                        </span>
+                        
+                        </div>
                     </div>
+                    </div>
+                    
+                    <div className='num'>
                     <div className="numbers">
                         <div className="order-num">
                             <h3 className="span-num ">
@@ -49,6 +55,7 @@ function HomeScreen() {
                             </h3>
                             
                         </div>
+                    </div>
                     </div>
                 </div>
             </div>
