@@ -34,8 +34,8 @@ a {
   
 }
 .width{
-  margin-left: 5%;
-  margin-right: 5%;
+  margin-left: 7%;
+  margin-right: 7%;
   margin-top: 5rem;
 }
 .hero{
@@ -53,7 +53,7 @@ a {
     width: 100%;
     position: relative;
     margin-bottom: 102px;
-    background-image: url('../public/images/home-page.jpg');
+    background-image: url('./images/home-page.jpg');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: right top;
@@ -178,13 +178,14 @@ text-transform: capitalize;
   display: flex;
   flex-direction: row;
  
+ 
 }
   .flex-text h2{
   font-size: 45px;
   font-weight: 300;
   }
   .flex-text p{
-    font-size: 20px;
+    font-size: 21px;
     font-weight: 100;
     letter-spacing: 1;
     line-height: 1.7;
@@ -200,11 +201,200 @@ text-transform: capitalize;
   align-items: center;
   padding: 15px 20px;
   font-weight: 400;
-  letter-spacing: 1px;
+  letter-spacing: 1.5px;
   border-radius: 45px;
   }
   .flex .image{
     padding-top: 55px;
   }
+
+  /*=============== gride===============*/
+  .flex-2{
+    margin-top: 13rem;
+    
+  }
+  .flex-2 h1{
+   text-align: center;
+   font-weight: 350;
+   font-size: 60px;
+   letter-spacing: 1px;
+  }
+  .spans{
+    color: #114aad;
+  }
+  .grid{
+    margin-top: 0.5rem;
+    display: grid;
+    grid-gap: 32px;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    width: 100%;
+    
+  }
+  .grid div img{
+    display: block;
+    width: 35px;
+    height: 36px; fill: none;
+    color: #0e63f4;
+    align-items:center ;
+  }
+  
+  .grid .img-align{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 62px;
+    border-radius: 15px; padding: 14px; height: 62px; background: #ffffff;
+    box-shadow: 0px -3px 4px rgba(0, 0, 0, 0.02), 0px 2px 3px rgba(0, 0, 0, 0.04),
+     0px 7px 6px rgba(0, 0, 0, 0.02), 0px 13px 24px 8px rgba(0, 0, 0, 0.03);
+
+  }
+  
+  .grid .shadow{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 100%;
+    min-width: 284px;
+    background: #FFFFFF;
+    box-shadow: 0px -3px 4px rgba(0, 0, 0, 0.02), 0px 2px 3px rgba(0, 0, 0, 0.04), 0px 7px 6px rgba(0, 0, 0, 0.02),
+     0px 13px 24px 8px rgba(0, 0, 0, 0.03);
+    height: fit-content;
+    min-height: 300px;
+    border-radius: 15px;
+    padding: 16px;
+    line-height: 150%;
+    color: #040e20;
+  }
+  .grid div h2{
+  
+    text-align: center;
+    margin-bottom: 10px;
+    line-height: 1.33;
+    font-size: 16px;
+    font-weight: 700;
+    color: #114aad;
+
+}
+  .grid div p {
+    font-size: 16px;
+    text-transform: initial;
+    line-height: 150%;
+    color: #040E20;
+    font-weight: 400;
+    text-align: center;
+}
+
+/*==================big circle============================*/
+.flex-3{
+  display: flex; flex-direction: row; align-items: flex-start; width: 100%; margin-top: 50px;
+}
+.flex-box{
+  display: flex;
+  flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    flex-grow: 0;
+    width: 32rem;
+    height: 32rem;
+    border-radius: 9999px;
+    background: #3674e0;
+    
+    color: #FFFFFF;
+}
+.flex-box span{
+  font-size: 75px;
+ font-weight: 350;
+ line-height: 76px;
+}
+.flex-box .flex-number{
+  font-size: 2.5rem;
+  line-height: 150%;
+}
+.flex-3-text{
+    text-align: left;
+    padding-left: 30px;
+   
+}
+.flex-3-text h2{
+  font-size: 50px;
+  color: #040E20;
+  font-weight: 500;
+  
+  letter-spacing: 4px;
+}
+.flex-3-text p{
+  font-size: 21px; font-weight: 400; letter-spacing: 1px; line-height: 1.3;
+}
+.btn-span{
+  position: relative; padding: 14px 32px; background: #0e63f4; font-size: 16px; border-radius: 50px;
+}
+.btn-span a{
+  color: #FFFFFF;
+  letter-spacing: 1.5spx;
+}
+/*.flex-3{
+    display: flex;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    width: 100%;
+    margin-top: 50px;
+  
+}
+.flex-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    flex-grow: 0;
+    width: 42rem;
+    height: 42rem;
+    border-radius: 9999px;
+    background: #3674e0;
+    flex-direction: column;
+    color: #FFFFFF;
+}
+.flex-box span{
+  font-size: 75px;
+ font-weight: 350;
+ line-height: 76px;
+}
+.flex-box .flex-number{
+  font-size: 2.5rem;
+  line-height: 150%;
+}
+.flex-3-text{
+    display: flex;flex-direction: column;
+    align-items: flex-start;
+}
+.flex-3-text h2{
+  font-size: 54px;
+  color: #040E20;
+  font-weight: 500;
+  width: 100%;
+  letter-spacing: 3px;
+}
+.flex-3-text p{
+  font-size: 26px; font-weight: 400; line-height: 1.5;
+}
+.flex-3-text .span{
+  min-width: 147px;
+  height: 4px;
+  font-size: 15px;
+  font-weight: 400;
+  background: #1866ee;
+    border-radius: var(--chakra-radii-full);
+    cursor: pointer;
+    justify-content: center;
+    padding: 30px;
+}*/
+
+ 
   
 
