@@ -152,48 +152,52 @@ function HomeScreen() {
             </div>
 
             <div className='header-2'>
-                <h2>Here is a summary of how Pharmachain will directly <span color='h-h2'>BENEFIT YOU.</span></h2>
+                <h2>Here is a summary of how Pharmachain will directly <span className='h-h2'>BENEFIT YOU.</span></h2>
                 <div className='header-btn'>
                     <div className='header-link'>
-                        <div className='btn-link'>
-                            <button className='tab-header' id='tab' type='button' aria-selected="true" aria-controls='tabs-:r8:--tabpanel-2'>
+                        <div className='btn-link' role='tablist' aria-orientation='horizontal'>
+                            <button className='tab-header' id='tabs-:r8:--tab-0' type='button' aria-selected='true' 
+                            aria-controls='tabs-:r8:--tabpanel-0' role='tab'  tabIndex={-1} data-index='0'>
                             HMOs
                             </button>
 
-                            <button className='tab-header' id='tab' type='button'>
-                            hospitals
+                            <button className='tab-header' type='button' id='tabs-:r8:--tab-1' role='tab' tabIndex={0} aria-selected='false' 
+                            aria-controls='tabs-:r8:--tabpanel-1'  data-index='1'>
+                            Hospitals
                             </button>
 
-                            <button className='tab-header' id='tab' type='button'>
+                            <button className='tab-header' id='tabs-:r8:--tab-2' type='button' aria-selected='false' 
+                            aria-controls='tabs-:r8:--tabpanel-2' role='tab'  tabIndex={-1} data-index='2'>
                             Professionals
                             </button>
 
-                            <button className='tab-header' id='tab' type='button'>
+                            <button className='tab-header' id='tabs-:r8:--tab-3' type='button' aria-selected='false' 
+                            aria-controls='tabs-:r8:--tabpanel-3' role='tab'  tabIndex={-1} data-index='3'>
                             Pharmacies
                             </button>
                             
                         </div>
 
                         <div className='tab-panels'>
-                            <span className='tab-para'>
+                            <span className='tab-para tpara' tabIndex={0} role='tabpanel' aria-labelledby='tabs-:r8:--tab-0' id='tabs-:r8:--tabpanel-0' hidden>
                                 <div className='tab-texts pc-tab-text'>
                                     <p>Health Maintenance Organizations (HMOs) incur a substantial cost increase of more than five times the retail cost of medication due to the higher charges imposed on them. However, by taking advantage of the platform's integration with multiple pharmacies, HMOs can potentially lower their medication costs. Through the use of PHARMACHAIN, HMOs can streamline the medication ordering and delivery process, enabling patients to receive their medications in a timely and convenient manner.</p>
                                 </div>
                             </span>
 
-                            <span className='tab-para' hidden>
+                            <span className='tab-para '  tabIndex={0} role='tabpanel' aria-labelledby='tabs-:r8:--tab-1' id='tabs-:r8:--tabpanel-1'>
                                 <div className='tab-texts pc-tab-text'>
                                     <p>By leveraging PHARMACHAIN, hospitals can improve their patients' experience by reducing wait times by over 60 minutes. Additionally, this integration provides hospitals with an opportunity to multiply their revenue by allowing them to earn income on prescriptions filled outside the hospital premises.</p>
                                 </div>
                             </span>
 
-                            <span className='tab-para' hidden>
+                            <span className='tab-para tpara' hidden tabIndex={0} role='tabpanel' aria-labelledby='tabs-:r8:--tab-2' id='tabs-:r8:--tabpanel-2'>
                                 <div className='tab-texts pc-tab-text'>
                                     <p>Pharmachain offers healthcare professionals an extensive range of medicines, allowing for convenient and streamlined ordering processes. This capability not only saves time and effort on the sourcing of medications for patients but also contributes to improving patient compliance and accelerating recovery.</p>
                                 </div>
                             </span>
 
-                            <span className='tab-para' hidden>
+                            <span className='tab-para tpara' hidden tabIndex={0} role='tabpanel' aria-labelledby='tabs-:r8:--tab-3' id='tabs-:r8:--tabpanel-3'>
                                 <div className='tab-texts pc-tab-text'>
                                     <p>Pharmachain offers pharmacies a comprehensive platform that enables them to boost their sales, minimize costs, optimize inventory management, and streamline delivery processes. By leveraging Pharmachain's capabilities, pharmacies can expand their customer base beyond their local community, thus mitigating the risk of losses stemming from sluggish sales and expired medications.</p>
                                 </div>
@@ -201,11 +205,153 @@ function HomeScreen() {
                         </div>
 
                         <div className='tab-links'>
-                            <a  className='tab-btn' href='/partner#hospitals'>Learn more →
+                            <a  className='tab-btn inactive' href='/partner#hospitals'>Learn more 
                         <div className='tab-btn-a'>
-                            <p></p>
+                            <p>→</p>
                         </div>
                             </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div className='space'></div>
+            <div className='team-text'>
+                <span className='svg'>
+                    <svg width={100} height={100} viewBox='0 0 100 100' fill='none' xmlns='http://www.w3.org/2000/svg'>
+                        <rect width={100} height={100} rx={50} fill='#EFFCFF'></rect>
+                    </svg>
+                </span>
+                <span className='span-svg'>
+                    <svg width={100} height={100} viewBox='0 0 100 100' fill='none' xmlns='http://www.w3.org/2000/svg'>
+                        <rect width={100} height={100} rx={16} 
+                        fill='#F2F7FF'></rect>
+                    </svg>
+                </span>
+                <h2>Our team of experts are dedicated to providing you with the best service possible.We work
+                     closely with leading pharmacies & pharmaceutical companies to ensure that you have access 
+                     to quality and affordable medicines.</h2>
+            </div>
+            <div className='chara-slid'>
+                <p className='slid-text'>In collabration with</p>
+                <div className='slid-img'>
+                    <div className='carousel'>
+                        <div>
+                            <div className='carousel-wrapper'>
+                                <ul className='carousel-stage'>
+                                    <li className='alice-span'>
+                                        <div className='alice-logo'>
+                                            <span className='wid'>
+                                                <img src='https://www.pharmachain.africa/_next/image?url=%2Fpartners%2Fzagbayi.png&w=256&q=75' alt='logo'/>
+                                            </span>
+                                        </div>
+                                    </li>
+
+                                    <li className='alice-carousel__stage-item'>
+                                        <div className='alice-logo'>
+                                            <span >
+                                                <img src='https://www.pharmachain.africa/_next/image?url=%2Fpartners%2Falpha.png&w=256&q=75' alt='logo'/>
+                                            </span>
+                                        </div>
+                                    </li>
+
+                                    <li className='alice-carousel__stage-item'>
+                                        <div className='alice-logo'>
+                                            <span >
+                                                <img src='https://www.pharmachain.africa/_next/image?url=%2Fpartners%2Fpharmaspace.png&w=256&q=75' alt='logo'/>
+                                            </span>
+                                        </div>
+                                    </li>
+
+                                    <li className='alice-carousel__stage-item'>
+                                        <div className='alice-logo'>
+                                            <span >
+                                                <img src='https://www.pharmachain.africa/_next/image?url=%2Fpartners%2Fcare-first.png&w=256&q=75' alt='logo'/>
+                                            </span>
+                                        </div>
+                                    </li>
+
+                                    <li className='alice-carousel__stage-item'>
+                                        <div className='alice-logo'>
+                                            <span >
+                                                <img src='https://www.pharmachain.africa/_next/image?url=%2Fpartners%2Fgreen-park.png&w=256&q=75' alt='logo'/>
+                                            </span>
+                                        </div>
+                                    </li>
+
+                                    <li className='alice-carousel__stage-item'>
+                                        <div className='alice-logo'>
+                                            <span >
+                                                <img src='https://www.pharmachain.africa/_next/image?url=%2Fpartners%2Fh-medix.png&w=256&q=75' alt='logo'/>
+                                            </span>
+                                        </div>
+                                    </li>
+
+                                    <li className='alice-carousel__stage-item'>
+                                        <div className='alice-logo'>
+                                            <span >
+                                                <img src='https://www.pharmachain.africa/_next/image?url=%2Fpartners%2Fmaima.png&w=256&q=75' alt='logo'/>
+                                            </span>
+                                        </div>
+                                    </li>
+
+                                    <li className='alice-carousel__stage-item'>
+                                        <div className='alice-logo'>
+                                            <span >
+                                                <img src='https://www.pharmachain.africa/_next/image?url=%2Fpartners%2Fnew-health.png&w=256&q=75' alt='logo'/>
+                                            </span>
+                                        </div>
+                                    </li>
+
+                                    <li className='alice-carousel__stage-item'>
+                                        <div className='alice-logo'>
+                                            <span >
+                                                <img src='https://www.pharmachain.africa/_next/image?url=%2Fpartners%2Fu-pharmacy.png&w=256&q=75' alt='logo'/>
+                                            </span>
+                                        </div>
+                                    </li>
+
+                                    <li className='alice-carousel__stage-item'>
+                                        <div className='alice-logo'>
+                                            <span >
+                                                <img src='https://www.pharmachain.africa/_next/image?url=%2Fpartners%2Fskylark.png&w=256&q=75' alt='logo'/>
+                                            </span>
+                                        </div>
+                                    </li>
+
+                                    <li className='alice-carousel__stage-item'>
+                                        <div className='alice-logo'>
+                                            <span >
+                                                <img src='https://www.pharmachain.africa/_next/image?url=%2Fpartners%2Ftonia.png&w=256&q=75' alt='logo'/>
+                                            </span>
+                                        </div>
+                                    </li>
+
+                                    <li className='alice-carousel__stage-item'>
+                                        <div className='alice-logo'>
+                                            <span >
+                                            <img src='https://www.pharmachain.africa/_next/image?url=%2Fpartners%2Fzagbayi.png&w=256&q=75' alt='logo'/>
+
+                                            </span>
+                                        </div>
+                                    </li>
+
+                                    <li className='alice-carousel__stage-item'>
+                                        <div className='alice-logo'>
+                                            <span >
+                                                <img src='' alt='logo'/>
+                                            </span>
+                                        </div>
+                                    </li>
+
+                                    <li className='alice-carousel__stage-item'>
+                                        <div className='alice-logo'>
+                                            <span >
+                                                <img src='' alt='logo'/>
+                                            </span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>

@@ -334,6 +334,167 @@ text-transform: capitalize;
   color: #FFFFFF;
   letter-spacing: 1.5spx;
 }
+
+/*===============================button=======================*/
+.header-2{
+  margin-top: 50px;
+  display: flex; align-items: center;flex-direction: row;
+  overflow-x: hidden ;height: 80vh;width: 100%;
+}
+.header-2 h2{
+  font-size: 36px;
+  line-height: 150%; color: #040E20; font-weight: 500;width: 40%;
+}
+.header-2 .h-h2{
+  color: #1d1de2;
+  font-weight: 700;
+}
+.header-2 .header-btn{
+  display: flex; align-items: center;
+  justify-content: flex-end;
+  flex-direction: row; width: 70%;
+}
+.header-link{
+  display: block; width: 100%; min-height: 35rem;overflow: hidden;
+  transition: all 0.3s;
+  background: #4F4F4F; color: #FFFF;
+  border-radius: 54px 54px 32px 32px; padding: 16px;position: relative;
+}
+.btn-link{
+  display: flex;justify-content: flex-start;
+  flex-direction: row;background: #3E3E3E;
+  border-radius: 36px;padding: 12px;position: relative;
+}
+.btn-link[aria-selected="true"] {
+  color: #4F4F4F;
+}
+.btn-link>[aria-selected=true] {
+  border-radius: 20px;
+  background: #FFFF;
+  color: #4F4F4F;
+}
+.tab-header{
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;flex: 1;
+  transition-property: background-color,border-color,color,
+  fill,stroke,opacity,box-shadow,transform;
+  transition-duration: 200ms; font-size: 1rem;
+  padding-top: 0.5rem;padding-bottom: 0.5rem;
+  padding-inline-start: 1rem;padding-inline-end: 1rem;
+  z-index: 1000;font-size: 20px;
+  font-weight: 700;
+}
+.btn-link button{
+  cursor: pointer;
+  background: transparent;text-transform: none; color: #FFFFFF;
+}
+.tab-panels{
+  padding-top: 32px;
+  width: 100%;
+}
+.tab-para{
+  opacity: 1;
+  padding: 1rem;
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+[hidden]{
+  display: none;
+}
+.tpara{
+  opacity: 0;
+  transform: translateY(20px) translateZ(0px);
+}
+.pc-tab-text{
+  align-items: flex-end;
+    height: 100%;
+}
+.tab-texts{
+  display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 100%;
+
+}
+.tab-texts p{
+    color: #FFFFFF;
+    font-size: 20px;
+    text-transform: initial;
+    font-weight: 300;
+    line-height: 180%;
+}
+p{
+  line-height: 180%;
+}
+.tab-links{
+  display: flex;align-items: center;justify-content: flex-end;
+  flex-direction: row;width: 100%;
+}
+.tab-links a{
+  font-weight: 400; min-height: 14px;border-radius: 9999px;
+  cursor: pointer;display: flex;justify-content: center;
+  align-self: flex-end;color: #000;
+}
+.inactive, .inactive.loading {
+  background: #f5f6f8;
+  white-space: nowrap;
+  height: 48px;
+  font-size: 16px;
+  align-items: center;
+  padding: 18px 20px;
+  justify-content: center;text-transform: capitalize;
+  line-height: 24px;transition: all .2s;
+  transform: scale(1);
+}
+a .tab-btn-a{
+  
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+.tab-btn-a p{
+  font-size: 40px;
+    text-transform: capitalize;
+    line-height: 150%;
+    color: #000000;
+    font-weight: 400;
+}
+.space{
+  margin-top: 50px; padding-top: 50px;padding-bottom: 50px;
+}
+.team-text{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 50vh;
+  position: relative;
+}
+.team-text h2{
+    font-size: 40px;
+    font-weight: 400;
+    text-align: center;
+    line-height: 58px;
+    color: #828282;
+    letter-spacing: .002rem;
+    width: 80%;
+}
+.svg{
+    position: absolute;
+    bottom: -4rem;
+    left: 9rem;
+}
+svg{
+  display: block;
+}
+.span-svg {
+  position: absolute;
+  top: calc(6rem * -1);
+  right: 13rem;
+}
 /*.flex-3{
     display: flex;
     -webkit-align-items: center;
